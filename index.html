@@ -1,24 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O- Ticket</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!--Daisy Ui-->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style/tiket.css">
+    <!--font Awsome-->
+    <script src="https://kit.fontawesome.com/8400b72255.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <main>
-        <section>
-            <div class="any">
-                
+    <header>
+        <div class="container mx-auto">
+            <!--Nav-->
+            <div class="navbar bg-base-100 ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Description</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl text-[#030712] font-extrabold">E-TICKET</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 flex gap-10 text-[#030712B3]">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Description</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <button class="btn bg-[#1DD10033] text-[#1DD100] text-xl px-8"><i class="fa-solid fa-bus mr-3"></i>Bus</button>
+                </div>
+            </div>
+            <div class="relative">
+                <!--banner-->
+                <div class="bg-[url(images/banner.png)] bg-no-repeat bg-cover bg-center rounded-lg">
+                    <div class="flex flex-col justify-center items-center lg:gap-5">
+                        <h1 class="text-2xl lg:text-5xl text-[#FFFFFF] font-bold mt-10 lg:mt-24">End-to-End Travel With
+                        </h1>
+                        <h1 class=" text-xl lg:text-4xl text-[#1DD100] font-bold mt-3">Selina Paribahan</h1>
+                        <p class="text-center text-[#FFFFFF]">If you are thinking about a trip .Let contact with us . We
+                            are <br>provide best road journey by bus.</p>
+                        <button class="btn mb-5 lg:mb-44 bg-[#1DD100] border-none text-xl font-bold">Buy Ticket</button>
+                    </div>
+                </div>
+                <!--absolute-->
+                <div class="lg:absolute   bottom-[-40px] lg:w-3/4 left-20">
+                    <div class="flex justify-around ">
+                        <!--item1-->
+                        <div class="lg:flex gap-2 bg-white shadow-lg lg:p-5 rounded-lg text-center lg:text-left p-2">
+                            <img src="images/people.png" alt="">
+                            <div>
+                                <h1>500K+</h1>
+                                <p>Register user</p>
+                            </div>
+                        </div>
+                        <!--item2-->
+                        <div class="lg:flex gap-2 bg-white shadow-lg lg:p-5 rounded-lg text-center lg:text-left p-2">
+                            <img src="images/ticket-cupon.png" alt="">
+                            <div>
+                                <h1>500K+</h1>
+                                <p>Register user</p>
+                            </div>
+                        </div>
+                        <!--item3-->
+                        <div class="lg:flex gap-2 bg-white shadow-lg lg:p-5 rounded-lg text-center lg:text-left p-2">
+                            <img src="images/stoppage.png" alt="">
+                            <div>
+                                <h1>500K+</h1>
+                                <p>Register user</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <!--Coupon section-->
+        <section class="mt-24">
+            <h1 class="text-2xl lg:text-4xl text-center font-bold">Best offers for you</h1>
+            <!--coupon container-->
+            <div class="flex flex-col lg:flex-row gap-5 lg:justify-around mt-5 lg:mt-10">
+                <!--first coupon-->
+                <div class="flex gap-2 lg:gap-10 bg-[#FFBF0F] p-3 lg:p-10 rounded-lg divide-x-4 ">
+                    <div class="space-y-2">
+                        <h1 class="text-2xl font-bold">15% OFF</h1>
+                        <p class="font-bold">on your next Purchase</p>
+                        <p class="text-[#03071266]">Use by february 2024</p>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold ml-5">NEW<span class="text-xl">15</span></h1>
+                        <p class="text-[#03071266] ml-5">Coupon Code</p>
+                    </div>
+                </div>
+                <!--second coupon-->
+                <div class="flex gap-2 lg:gap-10 bg-[#F78C9C] p-3 lg:p-10 rounded-lg divide-x-4">
+                    <div class="space-y-2">
+                        <h1 class="text-2xl font-bold">20% OFF</h1>
+                        <p class="font-bold">on your next Purchase</p>
+                        <p class="text-[#03071266]">Use by february 2024</p>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold ml-5">Couple 20</h1>
+                        <p class="text-[#03071266] ml-5">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-5 lg:mt-12">
+                <button class="btn text-[#1DD100] border-[#1DD100] bg-slate-50">See All offers</button>
+            </div>
+
+        </section>
+        </div>
+    </header>
+    <main class=" bg-[#F7F8F8] rounded-3xl">
+        <section class="mt-12 container mx-auto">
+            <div class="space-y-10">
+                <div class="text-center space-y-4">
+                    <h1 class="text-2xl lg:text-4xl font-bold pt-10">Selina paribahan</h1>
+                    <p class="text-balance">
+                        Absolutely, here's some text about a fictional bus company:
+                        Welcome to SwiftTransit, your premier choice for safe and reliable transportation! Established
+                        with a vision to connect communities and provide seamless travel experiences.
+                    </p>
+                </div>
+                <div class="bg-white grid grid-cols-1 lg:grid-cols-6 shadow-lg rounded-lg">
+                   <div class=" col-span-4 mt-12">
+                <!--starting section-->
+                    <div class="flex gap-10 justify-around">
+                        <div class="flex gap-5 lg:gap-10">
+                            <div><img src="images/bus-icon.png" class="w-12" alt=""></div>
+                            <div>
+                                <h1>Selina Poribahon</h1>
+                                <p>Coach-46746-Web! Ac_business</p>
+                            </div>
+                         </div>
+                         <div>
+                            <button class="btn bg-[#1DD10066]"><i class="fa-solid fa-bus"></i><span>20</span> Seat left</button>
+                         </div>
+                    </div>
+                  <!--design-->
+                    <div class="p-0 lg:p-12">
+                        <div class="space-y-5 bg-[#F7F8F8] rounded-lg p-0 lg:p-12 divide-y-2">
+                            <div class="flex justify-between">
+                                <h1>Route</h1>
+                                <h2 class="font-bold">Dhaka - sylhet</h2>
+                            </div>
+                            <div class="flex justify-between">
+                                <h1>Departure Time</h1>
+                                <h2 class="font-bold">9.00 pm</h2>
+                            </div>
+                            <div class="flex justify-around">
+                                <h1 class="bg-[030712CC] shadow-lg p-2 lg:p-5 rounded-lg">Boarding point-laxmipur</h1>
+                                <h1 class="bg-[030712CC] shadow-lg p-2 lg:p-5 rounded-lg">Droping point-Bgura</h1>
+                                <h1 class="bg-[030712CC] shadow-lg p-2 lg:p-5 rounded-lg">Est, Time-11Hours</h1>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="col-span-2 flex justify-center items-center">
+                    <div class="space-y-2 flex lg:flex-col justify-around gap-3">
+                        <img src="images/fare.png" alt="">
+                        <h1 class="text-2xl font-bold">550 Taka</h1>
+                        <p>Per Seat</p>
+                    </div>
+                   </div>
+                </div>
             </div>
         </section>
     </main>
-<script src="app/bus.js"></script>
+    <script src="app/bus.js"></script>
 </body>
 
 </html>
