@@ -4,11 +4,21 @@ function buyTicket() {
     show('seat-information');
     getInnerText('left-seat');
 }
-
+let n = 0;
 const seatClass = document.getElementsByClassName('seat');
 for (const seat of seatClass) {
     seat.addEventListener('click', function (event) {
+        if(n==4){
+            alert('Only 4 ticket you can buy.')
+            return;
+        }
+        seat.classList.add('disableButton');
+        seat.setAttribute('disabled',true);
+        //show user information field
+        show('user-d')
         //for left seat count
+        n++;
+        console.log(n);
         const allSeat = document.getElementById('left-seat');
         const seatText = allSeat.childNodes[1].innerText;
         const leftSeat = parseInt(seatText);
@@ -69,5 +79,6 @@ for (const seat of seatClass) {
     })
 }
 
-
-
+function forApply(){
+    hide('coupon')
+}

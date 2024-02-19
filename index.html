@@ -59,7 +59,8 @@
                         <h1 class=" text-xl lg:text-4xl text-[#1DD100] font-bold mt-3">Selina Paribahan</h1>
                         <p class="text-center text-[#FFFFFF]">If you are thinking about a trip .Let contact with us . We
                             are <br>provide best road journey by bus.</p>
-                        <button id="buy-ticket" onclick="buyTicket()" class="btn mb-5 lg:mb-44 bg-[#1DD100] border-none text-xl font-bold">Buy Ticket</button>
+                        <button id="buy-ticket" onclick="buyTicket()"
+                            class="btn mb-5 lg:mb-44 bg-[#1DD100] border-none text-xl font-bold">Buy Ticket</button>
                     </div>
                 </div>
                 <!--absolute-->
@@ -152,7 +153,8 @@
                                 </div>
                             </div>
                             <div>
-                                <button id="left-seat" class="btn bg-[#1DD10066]"><i class="fa-solid fa-bus"></i><span>20</span> Seat
+                                <button id="left-seat" class="btn bg-[#1DD10066]"><i
+                                        class="fa-solid fa-bus"></i><span>20</span> Seat
                                     left</button>
                             </div>
                         </div>
@@ -201,42 +203,42 @@
                         <div class="flex items-center justify-center">
                             <p>A</p>
                         </div>
-                        <div><button class="btn seat">A1</button></div>
-                        <div><button class="btn seat">A2</button></div>
-                        <div><button class="btn seat">A3</button></div>
-                        <div> <button class="btn seat">A4</button></div>
+                        <div><button id="chiar" class="btn seat">A1</button></div>
+                        <div><button id="chiar" class="btn seat">A2</button></div>
+                        <div><button id="chiar" class="btn seat">A3</button></div>
+                        <div><button id="chiar" class="btn seat">A4</button></div>
                         <!--Row 2-->
                         <div class="flex items-center justify-center">
                             <p>B</p>
                         </div>
-                        <div><button class="btn seat">B1</button></div>
-                        <div><button class="btn seat">B2</button></div>
-                        <div><button class="btn seat">B3</button></div>
-                        <div> <button class="btn seat">B4</button></div>
+                        <div><button id="chiar" class="btn seat">B1</button></div>
+                        <div><button id="chiar" class="btn seat">B2</button></div>
+                        <div><button id="chiar" class="btn seat">B3</button></div>
+                        <div><button id="chiar" class="btn seat">B4</button></div>
                         <!--Row 3-->
                         <div class="flex items-center justify-center">
                             <p>C</p>
                         </div>
-                        <div><button class="btn seat">C1</button></div>
-                        <div><button class="btn seat">C2</button></div>
-                        <div><button class="btn seat">C3</button></div>
-                        <div> <button class="btn seat">C4</button></div>
+                        <div><button id="chiar" class="btn seat">C1</button></div>
+                        <div><button id="chiar" class="btn seat">C2</button></div>
+                        <div><button id="chiar" class="btn seat">C3</button></div>
+                        <div><button id="chiar" class="btn seat">C4</button></div>
                         <!--Row 4-->
                         <div class="flex items-center justify-center">
                             <p>D</p>
                         </div>
-                        <div><button class="btn seat">D1</button></div>
-                        <div><button class="btn seat">D2</button></div>
-                        <div><button class="btn seat">D3</button></div>
-                        <div> <button class="btn seat">D4</button></div>
+                        <div><button id="chiar" class="btn seat">D1</button></div>
+                        <div><button id="chiar" class="btn seat">D2</button></div>
+                        <div><button id="chiar" class="btn seat">D3</button></div>
+                        <div><button id="chiar" class="btn seat">D4</button></div>
                         <!--Row 5-->
                         <div class="flex items-center justify-center">
                             <p>E</p>
                         </div>
-                        <div><button id="hje" class="btn seat">E1</button></div>
-                        <div><button id="hje" class="btn seat">E2</button></div>
-                        <div><button class="btn seat">E3</button></div>
-                        <div> <button class="btn seat">E4</button></div>
+                        <div><button id="chiar" class="btn seat">E1</button></div>
+                        <div><button id="chiar" class="btn seat">E2</button></div>
+                        <div><button id="chiar" class="btn seat">E3</button></div>
+                        <div><button id="chiar" class="btn seat">E4</button></div>
                     </div>
                 </div>
                 <!--Part one end-->
@@ -259,9 +261,12 @@
                             <h4>BDT <span id="total-amaount">0</span></h4>
                         </div>
                         <!--coupon-->
-                        <div id="coupon" class="flex w-[90%] lg:mx-auto justify-between hidden bg-white lg:p-3 rounded-2xl ">
-                            <input id="coupon-input" type="text" placeholder="Type here" class="input input-bordered max-w-xs grow " />
-                            <button id="apply-button" class="btn bg-[#1DD100] px-5 hidden">Apply</button>
+                        <div id="coupon"
+                            class="flex w-[90%] lg:mx-auto justify-between hidden bg-white lg:p-3 rounded-2xl ">
+                            <input id="coupon-input" type="text" placeholder="Type here"
+                                class="input input-bordered max-w-xs grow " />
+                            <button id="apply-button" onclick="forApply()"
+                                class="btn bg-[#1DD100] px-5 hidden">Apply</button>
                         </div>
                         <!--DISCOUNT PRICE-->
                         <div id="section-dis" class="flex justify-around hidden">
@@ -275,7 +280,7 @@
                         </div>
                     </div>
                     <!--information-->
-                    <div class="w-[80%] mx-auto">
+                    <div id="user-d" class="w-[80%] mx-auto hidden">
                         <div class="space-y-5">
                             <!--First-->
                             <label for="" class="text-xl font-bold">Passenger Name *</label>
@@ -283,16 +288,32 @@
                                 class="input input-bordered  w-full max-w-xs" />
                             <!--First-->
                             <label for="" class="text-xl font-bold">Passenger Number *</label>
-                            <input type="number" placeholder="Enter Your Number"
+                            <input id="for-number" type="number" placeholder="Must be submit 11 digit number"
                                 class="input input-bordered  w-full max-w-xs" required />
                             <!--First-->
                             <label for="" class="text-xl font-bold">Email Id </label>
                             <input type="email" placeholder="Email" class="input input-bordered  w-full max-w-xs" />
-                            <button class="btn w-full bg-[#1DD100]">Next</button>
+                            <button id="for-next" onclick="my_modal_5.showModal()"
+                                class="btn w-full bg-[#1DD100] hidden">Next</button>
                             <div class="flex justify-between">
                                 <a href="">Terms and Condition</a>
                                 <a href="">Cancellation Policy</a>
                             </div>
+                            <!--Modal-->
+                            <!-- Open the modal using ID.showModal() method -->
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                <div class="modal-box flex flex-col justify-center items-center">
+                                    <img src="images/success.png" class="w-[70px] py-5" alt="">
+                                    <h3 class="font-bold text-lg text-[#27AE60]">SUCCESS</h3>
+                                    <p class="py-4 text-center">Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you. Shortly you will find a confirmation in your email.</p>
+                                    <div class="modal-action flex justify-center">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn px-5 rounded-xl bg-[#27AE60]">Continue</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
                         </div>
                     </div>
                 </div>
@@ -314,6 +335,7 @@
     </footer>
     <script src="app/uitility.js"></script>
     <script src="app/bus.js"></script>
+    <script src="app/numCheck.js"></script>
 </body>
 
 </html>

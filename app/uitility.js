@@ -4,10 +4,10 @@ function hide(elementId){
 function show(elementId){
     document.getElementById(elementId).classList.remove('hidden');
 }
-//add background color
-// function setBackgroundColor (elementId){
-//     document.getElementsByClassName(elementId).style.backgroundColor ='#1DD100';
-// }
+// add background color
+//  function setBackgroundColor (elementId){
+//      document.getElementsByClassName(elementId).style.backgroundColor ='#1DD100';
+//  }
 //get innertext
 function getInnerText(elementId){
     const element = document.getElementById(elementId);
