@@ -18,7 +18,6 @@ for (const seat of seatClass) {
         show('user-d')
         //for left seat count
         n++;
-        console.log(n);
         const allSeat = document.getElementById('left-seat');
         const seatText = allSeat.childNodes[1].innerText;
         const leftSeat = parseInt(seatText);
