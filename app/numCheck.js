@@ -10,7 +10,7 @@ numberInput.addEventListener('keyup',function number(event){
     const userNumber =event.target.value;
     const checkNumber= validationOfNumber(userNumber);
     if(checkNumber === true){
-        document.getElementById('for-next').classList.remove('hidden');
+        document.getElementById('for-next').removeAttribute('disabled');
     }  
 })
 
